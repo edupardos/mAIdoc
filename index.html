@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarInicio" data-bs-offset="80" tabindex="0">
+    <!-- -------------- mAIdoc -------------- -->
+    <!-- En index.html, el usuario encuentra en la parte superior un menú, indicando las posibles vistas
+    del sitio web, además de una opción de login *¿Posible el iniciar sesión con google, y poder rescatar la foto?*,
+    donde podrá iniciar sesión con su usuario, y una opción de registro, por si quiere crear un usuario. -->
+
+    <!-- MENU NAVEGACIÓN -->
+    <nav id="navbarInicio" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="img/mAIdocPrinc.png" class="img-fluid" style="height: 50px; width: auto;" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupported" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <!-- Botón menu admin: Sólo visible para usuarios administradores. -->
+                    <button class="btn btn-outline-light mb-5 mb-lg-0" id="btnAdmin" style="display: none;">
+                        Admin
+                    </button>
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link" aria-current="page">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#nosotros" class="nav-link">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#objetivos" class="nav-link">
+                            Objetivos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#futuro" class="nav-link">
+                            Futuro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="bi bi-person-fill-x fs-4" id="iconoSinSesion"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DEL INICIO -->
+    <div id="inicio">
+        <section class="d-flex align-items-center text-center text-white" style="
+            background-image: url(img/mIAdocInicio.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 60vh;">
+            <div class="container d-flex flex-column justify-content-between"
+                style="min-height: 60vh; padding-top: 3rem; padding-bottom: 3rem;">
+                <h1 id="typewriter" class="fw-bold text-dark mb-3"></h1>
+                <div class="mb-1">
+                    <button class="button">
+                        <span class="button-content">Comenzar</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="m-0 border-2 border-dark opacity-100">
+
+    <!-- CONTENIDO SOBRE NOSOTROS -->
+    <div id="nosotros">
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h2 class="fw-semibold mb-4 heading-typewriter">¿Quiénes somos?</h2>
+                        <p class="text-muted">
+                            Somos mAIdoc, una aplicación web nacida con una idea sencilla: hacer que crear documentos
+                            deje de ser una tarea pesada y repetitiva. Creemos que la inteligencia artificial no debería
+                            sustituir tu trabajo, sino ayudarte a ir más rápido, organizar mejor tus ideas y darles una
+                            forma profesional sin que tengas que pelearte con formatos, plantillas o herramientas
+                            complicadas.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="img/quienessomos.png" class="img-fluid" style="width: 400px; height: 300px;"
+                            alt="Imagen sobre nosotros">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="m-0 border-2 border-dark opacity-100">
+
+    <!-- CONTENIDO ACERCA DE LOS OBJETIVOS DE LA MARCA -->
+    <div id="objetivos">
+        <section class="py-5 section-alt">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h2 class="fw-semibold heading-typewriter">Nuestro objetivo</h2>
+                        <p class="text-muted mt-3">
+                            Nuestro objetivo es ofrecerte un espacio de trabajo donde puedas generar guías, documentos,
+                            borradores de proyectos, código HTML e incluso contenido visual a partir de algo tan simple
+                            como una descripción. Tú pones el qué y el por qué; mAIdoc te ayuda con el cómo.
+                        </p>
+                        <p class="text-muted">
+                            Queremos que estudiantes, formadores, creadores de contenido y profesionales tengan una
+                            herramienta enfocada en lo práctico: sin humo, sin complicaciones y con resultados que
+                            puedas usar directamente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloques de funcionalidades -->
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-file-earmark-text fs-1"></i>
+                                </div>
+                                <h5 class="card-title mb-2">Documentos y guías</h5>
+                                <p class="card-text">
+                                    Genera guías, resúmenes o documentos completos a partir de unas pocas indicaciones,
+                                    listos para revisar, adaptar y compartir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-image fs-1"></i>
+                                </div>
+                                <h5 class="card-title mb-2">Contenido visual</h5>
+                                <p class="card-text">
+                                    Crea ideas para imágenes, composiciones visuales o material gráfico que complemente
+                                    tus documentos, presentaciones o proyectos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-filetype-html fs-1"></i>
+                                </div>
+                                <h5 class="card-title mb-2">Código HTML</h5>
+                                <p class="card-text">
+                                    Genera estructuras HTML limpias para landings, secciones web o prototipos que luego
+                                    podrás pulir en tu propio editor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <hr class="m-0 border-2 border-dark opacity-100">
+
+    <!-- CONTENIDO ACERCA DE NUESTRO FUTURO -->
+    <div id="futuro">
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="img/futuro.png" class="img-fluid" style="width: 400px; height: 300px;"
+                            alt="Imagen sobre nosotros">
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <h2 class="fw-semibold mb-4 heading-typewriter">Planes a futuro</h2>
+                        <p class="text-muted">
+                            Somos mAIdoc, una aplicación web nacida con una idea sencilla: hacer que crear documentos
+                            deje de ser una tarea pesada y repetitiva. Creemos que la inteligencia artificial no debería
+                            sustituir tu trabajo, sino ayudarte a ir más rápido, organizar mejor tus ideas y darles una
+                            forma profesional sin que tengas que pelearte con formatos, plantillas o herramientas
+                            complicadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid text-center bg-dark py-3 text-white">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center py-1">
+                <img src="img/mAIdocSinText.png" class="img-fluid" style="width: 50px; height: auto;" alt="Logo">
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center py-1">
+                <p class="m-0 lh-1">© 2025 mAIdoc</p>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center py-1">
+                <p class="m-0 lh-1">📧 contacto@maidoc.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
