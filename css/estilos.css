@@ -133,3 +133,16 @@
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Funcionamiento de page */
+.page {
+  display: none;
+}
+
+.page-active {
+  display: block;
+}
+
+.login-card {
+  border-radius: 1rem;
+}
